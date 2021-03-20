@@ -1,0 +1,356 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "poppins", sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 50px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+}
+
+.header img {
+    width: 40px;
+    height: 40px;
+    margin: 6px 12px;
+    border-radius: 20px;
+    border: 2px solid black; 
+}
+
+.landing {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 540px;
+    background-color: #0505AD;
+    align-items: center;
+}
+
+.landing h2 {
+    width: 214px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 54px;
+    color: #FFFFFF;
+    margin-top: 37px;
+    margin-left: 19px;
+}
+
+.landing p {
+    width: 247px;
+    height: 55px;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFFFFF;
+    margin-top: 43px;
+    margin-left: 19px;
+}
+
+.landing ul {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFFFFF;
+    margin-top: 17px;
+    margin-left: 19px;
+    list-style: none;
+}
+
+.landing ul li {
+    margin-top: 13px;
+}
+
+.landing ul li span {
+    display: inline-block;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    color: black;
+    background-image: url(../assets/icons/check-circle.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.landing a {
+    position: absolute;
+    top: 530px;
+    display: block;
+    margin-top: 35px;
+    padding: 15px;
+    width: 229px;
+    height: 48px;
+    background-color: #FFFFFF;
+    /*Sombras*/
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border-radius: 4px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color:black;
+}
+
+.landing a span {
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left: 10px;
+    background-image: url("../assets/icons/down-arrow.svg");
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 710px;
+    background-color: white;
+}
+
+.info h2 {
+    display: flex;
+    width: 263px;
+    margin-top: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+}
+
+.info__container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 18px;
+}
+
+.info__card {
+    width: 80%;
+    min-width: 250px;
+    max-width: 350px;
+    height: 130px;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: #E5E5E5;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
+
+.info__card h3{
+    width: 180px;
+    height: 42px;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 27px;
+    color: #000000;
+}
+
+.info__card p {
+    width: 217px;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.info__email {
+    width: 260px;
+    height: 30px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.info__email input {
+    width: 200px;
+    height: 30px;
+    background: #FFFFFF;
+    border: 1px solid #36466B;
+    box-sizing: border-box;
+    border-radius: 15px 0px 0px 15px;
+    outline: none;
+}
+
+.info__email input:hover {
+    box-shadow: 0 1px 6px 0 #20212447;
+    border-color: #dfe1e500;
+}
+
+.info__email button {
+    width: 50px;
+    height: 30px;
+    background: #36466B;
+    border: 1px solid #36466B;
+    box-sizing: border-box;
+    border-radius: 0px 5px 5px 0px;
+    color: #FAA410;
+    cursor: pointer;
+}
+
+.contact{
+    width: 100%;
+    height: 640px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #0505AD;
+}
+
+.contact__map{
+    width: 240px;
+    height: 240px;
+    background-color: white;
+}
+
+.contact__form{
+    width: 75%;
+    min-width: 240px;
+    max-width: 600px;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    margin-top: 56px;
+}
+
+.contact__form form{
+    width: 100%;
+    padding: 20px;
+}
+
+.contact__form input{
+    width: 100%;
+    height: 23px;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+    outline: none;
+}
+
+.contact__form button{
+    width: 100%;
+    margin-top: 20px;
+    background-color: #FAA410;
+    cursor: pointer;
+}
+
+.plans{
+    width: 100%;
+    min-width: 320px;
+    height: 640px;
+    text-align: center;
+}
+
+.plans__titulo{
+    width: 90%;
+    min-width: 250px;
+    height: 52px;
+    margin: 28px auto 0px;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #000000;
+}
+
+.plans__contenido{
+    width: 196px;
+    height: 77px;
+    margin: 37px auto 0px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 12px;
+    color: #747070;
+}
+
+.plans__slider{
+    display: flex;
+    height: 380px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
+.plans__card{
+    position: relative;
+    scroll-snap-align: center;
+    width: 70%;
+    min-width: 190px;
+    max-width: 250px;
+    height: 310px;
+    margin: 50px 5px 0;
+    padding: 0 15px;
+    background: #FAA410;
+    box-shadow: 3px 5px 10px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.plans__card--precio{
+    width: 160px;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 54px;
+    margin: 5px auto 0px;
+    color: #FFFFFF;
+}
+
+.plans__card--cantidadClases{
+    font-weight: bold;
+    font-size: 96px;
+    line-height: 144px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.plans__card--tipoClase{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.plans__card--button{
+    display: block;
+    width: 160px;
+    height: 40px;
+    margin: 28px auto 0px;
+    padding: 6px;
+    background-color: #0505AD;
+    border-radius: 5px;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.plans__card--button span{
+    display: inline-block;
+    width: 20px;
+    height: 21px;
+    margin-left: 10px;
+    mask-image: url(../assets/icons/shopping_cart.png);
+    mask-size: cover;
+    background-color: white;
+    vertical-align: text-bottom;
+}
