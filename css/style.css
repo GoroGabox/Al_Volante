@@ -4,37 +4,88 @@
     box-sizing: border-box;
 }
 
+:root {
+    --dark-primary-color:#1976D2;
+    --light-primary-color:#BBDEFB;
+    --primary-color:#2196F3;
+    --text-icons:#FFFFFF;
+    --acent-color:#FF9800;
+    --primary-text:#212121;
+    --secondary-text:#757575;
+    --divider-color:#BDBDBD;
+}
+
 html {
     font-size: 62.5%;
     font-family: "poppins", sans-serif;
 }
 
+/* Barra de navegacion */
+
 .header {
-    width: 100%;
-    height: 50px;
     background-color: #ffffff;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.header__container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
 }
 
-.header img {
-    width: 40px;
-    height: 40px;
-    margin: 6px 12px;
-    border-radius: 20px;
-    border: 2px solid black; 
+.nav-logo {
+    display: flex;
+    font-size: 1.5rem;
+    margin: .5rem;
 }
+
+.nav-logo a{
+    text-decoration: none;
+    color: black;
+}
+.nav-links ul{
+    display: flex;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+    display: block;
+}
+
+.nav-links li:hover {
+    border:1px solid black;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1.5rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 4px;
+    width: 100%;
+    background-color: black;
+    border-radius: 15px;
+}
+
+/* Portada pagina principal */
 
 .landing {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 540px;
-    background-color: #0505AD;
+    background-image: linear-gradient(to bottom, #044585, #0f589f, #186cbb, #1d81d7, #2196f3);
     align-items: center;
 }
 
@@ -114,6 +165,8 @@ html {
     margin-left: 10px;
     background-image: url("../assets/icons/down-arrow.svg");
 }
+
+/* Descripcion del curso */
 
 .info {
     display: flex;
@@ -203,6 +256,11 @@ html {
     cursor: pointer;
 }
 
+.info__email a {
+    text-decoration: none;
+    color: var(--text-icons);
+}
+
 .contact{
     width: 100%;
     height: 640px;
@@ -210,46 +268,15 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #0505AD;
+    background-color: var(--primary-color);
 }
 
 .contact__map{
-    width: 240px;
-    height: 240px;
-    background-color: white;
 }
 
-.contact__form{
-    width: 75%;
-    min-width: 240px;
-    max-width: 600px;
-    height: 240px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: white;
-    margin-top: 56px;
-}
-
-.contact__form form{
-    width: 100%;
-    padding: 20px;
-}
-
-.contact__form input{
-    width: 100%;
-    height: 23px;
-    border: 1px solid #C4C4C4;
-    border-radius: 5px;
-    outline: none;
-}
-
-.contact__form button{
-    width: 100%;
-    margin-top: 20px;
-    background-color: #FAA410;
-    cursor: pointer;
+.contact__map img {
+    width: 900px;
+    height: 450px;
 }
 
 .plans{
@@ -353,4 +380,37 @@ html {
     mask-size: cover;
     background-color: white;
     vertical-align: text-bottom;
+}
+
+@media (max-width: 600px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links li {
+        text-align: center;
+    }
+
+    .nav-links li a {
+        padding: .5rem 1rem;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
 }
