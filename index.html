@@ -11,10 +11,17 @@
     </head>
     <body>
         <header class="header">
-            <div class="header__container">
-                <img src="" alt="">
-                <h1>Al volante</h1>
-                <div></div>
+            <div class="nav-logo">Al volante</div>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="singUp.html">Registrate</a></li>
+                    <li><a href="login.html">Inicia Sesion</a></li>
+                </ul>    
             </div>
         </header>
         <main>
@@ -47,28 +54,13 @@
                 </div>
                 <div class="info__email">
                     <input type="email" placeholder="  Inscribete con tu email">
-                    <button type="submit">Enviar</button>
+                    <button type="submit"><a href="singUp.html">Enviar</a></button>
                 </div>
             </section>
             <section class="contact">
-                <div class="contact__map"></div>
-                <section class="contact__form">
-                    <form action="#" method="post">
-                        <label for="name">Nombres</label>
-                        <br>
-                        <input type="text" name="name" >
-                        <br>
-                        <label for="phone">Telfono</label>
-                        <br>
-                        <input type="text" name="phone" >
-                        <br>
-                        <label for="email">E-mail</label>
-                        <br>
-                        <input type="email" name="email" >
-                        <br>
-                        <button type="submit">Comienza ahora</button>
-                    </form>
-                </section>
+                <div class="contact__map">
+                    <img src="assets/imgs/Info curso.png" alt="Orden del Curso">
+                </div>
             </section>
             <section id="planes" class="plans">
                 <h3 class="plans__titulo">
@@ -102,5 +94,6 @@
                 </section>
             </section>
         </main>
+        <script src="./script.js"></script>
     </body>
 </html>
