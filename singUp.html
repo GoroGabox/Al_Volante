@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <a href="index.html"><div class="nav-logo"></div></a>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="nav-links">
+            <ul>
+                <li><a href="login.html">Inicia Sesion</a></li>
+            </ul>    
+        </div>
+    </header>
+    <main>
+        <div class="title">
+            <h1>Registrate</h1>
+        </div>
+        <div class="form_container">
+            <form action="results.html" class="form" method="GET" enctype="multipart/form-data">
+                <div>
+                    <label for="name"></label>
+                    <input name="name" id="name" type="text" placeholder="Nombre Completo" required>
+                </div>
+                <div>
+                    <label for="email"></label>
+                    <input type="email" name="email" id="name" placeholder="E-mail" required>
+                </div>
+                <div>
+                    <label for="date"></label>
+                    <input type="date" name="date" id="date" placeholder="Fecha de Nacimiento" required>
+                </div>
+                <div>
+                    <label for="phone"></label>
+                    <input type="tel" name="phone" id="phone" placeholder="Telefono" required>
+                </div>
+                <div>
+                    <label for="password"></label>
+                    <input name="password" id="password" type="password" placeholder="Contraseña" required>
+                </div>
+                <button type="submit">Registrate</button>
+                <a href="login.html" >Inicia sesion</a>
+            </form>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
