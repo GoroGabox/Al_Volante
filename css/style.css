@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
     margin: 0;
     padding: 0;
@@ -382,4 +383,390 @@ html {
     .nav-links.active {
         display: flex;
     }
+=======
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-primary-color:#1976D2;
+    --light-primary-color:#BBDEFB;
+    --primary-color:#2196F3;
+    --text-icons:#FFFFFF;
+    --acent-color:#FF9800;
+    --primary-text:#212121;
+    --secondary-text:#757575;
+    --divider-color:#BDBDBD;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "poppins", sans-serif;
+}
+
+/* Barra de navegacion */
+
+.header {
+    background-color: #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.nav-logo {
+    display: flex;
+    width: 10rem;
+    height: 6rem;
+    margin: .5rem ;
+    place-self: left;
+    background-image: url(../assets/imgs/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.nav-logo a {
+    cursor: pointer;
+}
+
+.nav-links ul{
+    display: flex;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    padding: 1rem;
+    display: block;
+}
+
+.nav-links li:hover {
+    background-color: #2095f2;
+}
+
+.nav-links li a:hover {
+    color:white;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 2.7rem;
+    right: 1.5rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 4px;
+    width: 100%;
+    background-color: black;
+    border-radius: 15px;
+}
+
+/* Portada pagina principal */
+
+.landing {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 540px;
+    background-image: linear-gradient(to bottom, #044585, #0f589f, #186cbb, #1d81d7, #2196f3);
+    align-items: center;
+}
+
+.landing h2 {
+    width: 214px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 54px;
+    color: #FFFFFF;
+    margin-top: 37px;
+    margin-left: 19px;
+}
+
+.landing p {
+    width: 247px;
+    height: 55px;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFFFFF;
+    margin-top: 43px;
+    margin-left: 19px;
+}
+
+.landing ul {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFFFFF;
+    margin-top: 17px;
+    margin-left: 19px;
+    list-style: none;
+}
+
+.landing ul li {
+    margin-top: 13px;
+}
+
+.landing ul li span {
+    display: inline-block;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    color: black;
+    background-image: url(../assets/icons/check-circle.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.landing a {
+    position: relative;
+    top: 25px;
+    display: block;
+    margin-top: 35px;
+    padding: 15px;
+    width: 229px;
+    height: 48px;
+    background-color: #FFFFFF;
+    /*Sombras*/
+    box-shadow: 0px 4px 8px rgb(24, 21, 14);
+    border-radius: 4px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color:black;
+}
+
+.landing a span {
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left: 10px;
+    background-image: url("../assets/icons/down-arrow.svg");
+}
+
+/* Descripcion del curso */
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 710px;
+    background-color: white;
+}
+
+.info h2 {
+    display: flex;
+    width: 50%;
+    margin-top: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.4em;
+    color: #000000;
+}
+
+.info__container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 18px;
+}
+
+.info__card {
+    width: 80%;
+    min-width: 250px;
+    max-width: 350px;
+    height: 130px;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: #E5E5E5;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
+
+.info__card h3{
+    width: 180px;
+    height: 42px;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 27px;
+    color: #000000;
+}
+
+.info__card p {
+    width: 217px;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000000;
+}
+
+.contact{
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: grid;
+    place-items: center;
+    background-color: var(--primary-color);
+}
+
+.contact img{
+    width: 75%;
+    height: auto;
+}
+
+.plans{
+    width: 100%;
+    min-width: 320px;
+    height: 640px;
+    display: grid;
+    text-align: center;
+    justify-content: center;
+}
+
+.plans__titulo{
+    width: 90%;
+    min-width: 250px;
+    height: auto;
+    margin: 28px auto 5px;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 4rem;
+    line-height: 36px;
+    text-align: center;
+    color: #000000;
+}
+
+.plans__contenido{
+    width: 60%;
+    margin: 3.7rem auto;
+    text-align: left;
+    font-weight: 500;
+    font-size: 2rem;
+    color: #747070;
+}
+
+.plans__slider{
+    display: flex;
+    height: 380px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
+.plans__card{
+    position: relative;
+    scroll-snap-align: center;
+    width: 70%;
+    min-width: 190px;
+    max-width: 250px;
+    height: 310px;
+    margin: 50px 5px 0;
+    padding: 0 15px;
+    background: #FAA410;
+    box-shadow: 3px 5px 10px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.plans__card--precio{
+    width: 160px;
+    font-weight: bold;
+    font-size: 34px;
+    line-height: 54px;
+    margin: 5px auto 0px;
+    color: #FFFFFF;
+}
+
+.plans__card--cantidadClases{
+    font-weight: bold;
+    font-size: 96px;
+    line-height: 144px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.plans__card--tipoClase{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.plans__card--button{
+    display: block;
+    width: 160px;
+    height: 40px;
+    margin: 28px auto 0px;
+    padding: 6px;
+    background-color: #0505AD;
+    border-radius: 5px;
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.plans__card--button span{
+    display: inline-block;
+    width: 20px;
+    height: 21px;
+    margin-left: 10px;
+    background-image: url(../assets/icons/shopping_cart.png);
+    background-size: cover;
+    color: white;
+    vertical-align: text-bottom;
+}
+
+@media (max-width: 600px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links li {
+        text-align: center;
+    }
+
+    .nav-links li a {
+        padding: .5rem 1rem;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+>>>>>>> 2b706bf2a3cfe8f2b37f6db08687f604f64c35ea
 }
