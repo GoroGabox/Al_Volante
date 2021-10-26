@@ -28,19 +28,24 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 10px;
+    padding: 0 15px;
 }
 
 .nav-logo {
     display: flex;
-    font-size: 1.5rem;
-    margin: .5rem;
+    width: 10rem;
+    height: 6rem;
+    margin: .5rem ;
+    place-self: left;
+    background-image: url(../assets/imgs/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
-.nav-logo a{
-    text-decoration: none;
-    color: black;
+.nav-logo a {
+    cursor: pointer;
 }
+
 .nav-links ul{
     display: flex;
 }
@@ -52,17 +57,22 @@ html {
 .nav-links li a{
     text-decoration: none;
     color: black;
+    font-size: 2rem;
     padding: 1rem;
     display: block;
 }
 
 .nav-links li:hover {
-    border:1px solid black;
+    background-color: #2095f2;
+}
+
+.nav-links li a:hover {
+    color:white;
 }
 
 .toggle-button {
     position: absolute;
-    top: .75rem;
+    top: 2.7rem;
     right: 1.5rem;
     display: none;
     flex-direction: column;
@@ -141,8 +151,8 @@ html {
 }
 
 .landing a {
-    position: absolute;
-    top: 530px;
+    position: relative;
+    top: 25px;
     display: block;
     margin-top: 35px;
     padding: 15px;
@@ -150,7 +160,7 @@ html {
     height: 48px;
     background-color: #FFFFFF;
     /*Sombras*/
-    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    box-shadow: 0px 4px 8px rgb(24, 21, 14);
     border-radius: 4px;
     font-size: 1.4rem;
     font-weight: bold;
@@ -179,12 +189,11 @@ html {
 
 .info h2 {
     display: flex;
-    width: 263px;
+    width: 50%;
     margin-top: 50px;
     text-align: center;
     font-weight: bold;
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 2.4em;
     color: #000000;
 }
 
@@ -223,89 +232,49 @@ html {
     color: #000000;
 }
 
-.info__email {
-    width: 260px;
-    height: 30px;
-    border-radius: 15px;
-    margin-top: 20px;
-}
-
-.info__email input {
-    width: 200px;
-    height: 30px;
-    background: #FFFFFF;
-    border: 1px solid #36466B;
-    box-sizing: border-box;
-    border-radius: 15px 0px 0px 15px;
-    outline: none;
-}
-
-.info__email input:hover {
-    box-shadow: 0 1px 6px 0 #20212447;
-    border-color: #dfe1e500;
-}
-
-.info__email button {
-    width: 50px;
-    height: 30px;
-    background: #36466B;
-    border: 1px solid #36466B;
-    box-sizing: border-box;
-    border-radius: 0px 5px 5px 0px;
-    color: #FAA410;
-    cursor: pointer;
-}
-
-.info__email a {
-    text-decoration: none;
-    color: var(--text-icons);
-}
-
 .contact{
     width: 100%;
-    height: 640px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: grid;
+    place-items: center;
     background-color: var(--primary-color);
 }
 
-.contact__map{
-}
-
-.contact__map img {
-    width: 900px;
-    height: 450px;
+.contact img{
+    width: 75%;
+    height: auto;
 }
 
 .plans{
     width: 100%;
     min-width: 320px;
     height: 640px;
+    display: grid;
     text-align: center;
+    justify-content: center;
 }
 
 .plans__titulo{
     width: 90%;
     min-width: 250px;
-    height: 52px;
-    margin: 28px auto 0px;
+    height: auto;
+    margin: 28px auto 5px;
     font-family: Poppins;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 4rem;
     line-height: 36px;
     text-align: center;
     color: #000000;
 }
 
 .plans__contenido{
-    width: 196px;
-    height: 77px;
-    margin: 37px auto 0px;
+    width: 60%;
+    margin: 3.7rem auto;
     text-align: left;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 2rem;
     color: #747070;
 }
 
@@ -376,9 +345,9 @@ html {
     width: 20px;
     height: 21px;
     margin-left: 10px;
-    mask-image: url(../assets/icons/shopping_cart.png);
-    mask-size: cover;
-    background-color: white;
+    background-image: url(../assets/icons/shopping_cart.png);
+    background-size: cover;
+    color: white;
     vertical-align: text-bottom;
 }
 
