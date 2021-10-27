@@ -345,9 +345,9 @@ html {
     width: 20px;
     height: 21px;
     margin-left: 10px;
-    mask-image: url(../assets/icons/shopping_cart.png);
-    mask-size: cover;
-    background-color: white;
+    background-image: url(../assets/icons/shopping_cart.png);
+    background-size: cover;
+    color: white;
     vertical-align: text-bottom;
 }
 
