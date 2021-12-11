@@ -29,14 +29,12 @@ html {
 }
 
 .whatsApp_Button-upper{
+    position: relative;
+    bottom: -200px;
     width: 351px;
     height: 248px;
-    margin-bottom: 20px;
-    display: none;
-}
-
-.whatsApp_Button-upper.active {
-    display: block;
+    opacity: 0;
+    transition: opacity 200ms ease-out, transform 200ms ease-out;
 }
 
 .whatsApp_Button-upper-green {
@@ -87,7 +85,7 @@ html {
 }
 
 .white-text1 {
-    color:#a5abb7;
+    color:#515459;
 }
 
 .innerBox {
@@ -149,24 +147,65 @@ html {
     width: 156px;
     height: 52px;
     padding: 8px 12px;
+    box-shadow: -4px 13px 50px -8px #383737;
     letter-spacing: -0.03em;
+    transition: transform 200ms ease-out, opacity 280ms ease-out;
 }
 
-.whatsApp_Button-callToAction.active {
-    display: none;
+.whatsApp_Button-callToAction p{
+    font-size: 12px;
 }
 
 .whatsApp_Button-icon {
     display: grid;
+    position: relative;
     width: 56px;
     height: 56px;
     border-radius: 28px;
     background-color: #2db742;
     place-items: center;
     box-shadow: -4px 13px 50px -8px #000000;
+    cursor: pointer;
+    transition: transform 200ms ease-out;
 }
 
-.whatsApp_Button-icon img {
+.wa_icon {
+    position: absolute;
     width: 35px;
     height: 35px;
+    z-index: 1;
+    transition: transform 200ms ease-out;
+}
+
+.x_icon {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 200ms ease-out, transform 250ms ease-out;
+}
+
+.whatsApp_Button-upper.active {
+    opacity: 100;
+    transform: translateY(-220px);
+}
+
+.whatsApp_Button-callToAction.active {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.whatsApp_Button-icon:hover {
+    transform: scale(1.15);
+}
+
+.wa_icon.active {
+    transform: scale(0) rotate(360deg);
+}
+
+.x_icon.active {
+    z-index: 1;
+    opacity: 100;
+    transform: rotate(360deg);
 }
