@@ -20,12 +20,17 @@ html {
     font-family: "poppins", sans-serif;
 }
 
+.hero {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-gap: 1rem;
+}
+
 .main-grid {
     padding: 3rem;
-    height: 100vh;
     display: grid;
     grid-gap: 3rem;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .curse-card {

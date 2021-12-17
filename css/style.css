@@ -254,6 +254,7 @@ html {
     display: grid;
     text-align: center;
     justify-content: center;
+    margin-bottom: 4rem;
 }
 
 .plans__titulo{

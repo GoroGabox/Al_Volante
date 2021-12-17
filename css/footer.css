@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-primary-color:#1976D2;
+    --light-primary-color:#BBDEFB;
+    --primary-color:#2196F3;
+    --text-icons:#FFFFFF;
+    --acent-color:#FF9800;
+    --primary-text:#212121;
+    --secondary-text:#757575;
+    --divider-color:#BDBDBD;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "poppins", sans-serif;
+}
+
+hr {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    height:0.1rem;
+    border-width:0;
+    color:gray;
+    background-color:gray
+}
+
+.footer {
+    width: 100%;
+    padding: 60px 0 !important;
+    background-color: rgb(3, 3, 39);
+}
+
+.footer-grid {
+    width: 1170px;
+    margin: 0 auto;
+    max-width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    font-size: 1.6rem;
+}
+
+.fo {
+    color: white;
+    margin-left: 1.75rem;
+    margin-right: 1.75rem;
+}
+
+.fo li {
+   list-style: none;
+   text-decoration: none;
+}
+
+.st {
+    margin-bottom: 2.0rem;
+    font-size: 2.2rem;
+}
+
+.contactos-card{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.contactos-card-adress {
+    display: flex;
+}
+
+.contactos-card-tel {
+    color: var(--dark-primary-color);
+}
+
