@@ -38,6 +38,7 @@ hr {
 .footer-grid {
     width: 1170px;
     margin: 0 auto;
+    min-width: 600px;
     max-width: 90%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
