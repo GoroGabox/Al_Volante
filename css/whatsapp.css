@@ -30,11 +30,11 @@ html {
 
 .whatsApp_Button-upper{
     position: relative;
-    bottom: -200px;
+    bottom: -330px;
     width: 351px;
     height: 248px;
     opacity: 0;
-    transition: opacity 200ms ease-out, transform 200ms ease-out;
+    transition: opacity 280ms ease-out, transform 300ms ease-out;
 }
 
 .whatsApp_Button-upper-green {
@@ -186,9 +186,11 @@ html {
     transition: opacity 200ms ease-out, transform 250ms ease-out;
 }
 
+/* ACTIVE */
+
 .whatsApp_Button-upper.active {
     opacity: 100;
-    transform: translateY(-220px);
+    transform: translateY(-350px);
 }
 
 .whatsApp_Button-callToAction.active {
