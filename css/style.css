@@ -334,7 +334,7 @@ html {
     border-radius: 50px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 620px) {
     .toggle-button {
         display: flex;
     }

@@ -18,28 +18,31 @@
 html {
     font-size: 62.5%;
     font-family: "poppins", sans-serif;
-}
-
-.hero {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    grid-gap: 1rem;
+    min-width: 40rem;
 }
 
 .main-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 3rem;
-    display: grid;
-    grid-gap: 3rem;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.main-grid a {
+    text-decoration: none;
+    color: black;
+    margin: 1rem;
+    flex: 0 1 auto;
 }
 
 .curse-card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 350px;
-    background-color: var(--light-primary-color);
+    height: 35rem;
+    background-color: var(--acent-color);
     border-radius: 25px;
+    box-shadow: 8px 8px 50px -6px #000000;
 }
 
 .image-card {
@@ -58,15 +61,15 @@ html {
 }
 
 .price-card {
-    color: var(--secondary-text);
+    color: var(--primary-text);
     font-weight: bold;
-    font-size: 2rem;
+    font-size: 3.5em;
 }
 
 .title-card {
     color: var(--primary-text);
-    font-weight: bold;
-    font-size: 4rem;
+    font-weight: 200;
+    font-size: 2em;
 }
 
 .right-card {
@@ -76,5 +79,5 @@ html {
 }
 
 .description-card {
-    font-size: 1.5rem;
+    font-size: 1.5em;
 }

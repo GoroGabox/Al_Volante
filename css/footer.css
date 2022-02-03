@@ -31,14 +31,14 @@ hr {
 
 .footer {
     width: 100%;
-    padding: 60px 0 !important;
+    padding: 60px 0;
     background-color: rgb(3, 3, 39);
 }
 
 .footer-grid {
     width: 1170px;
     margin: 0 auto;
-    min-width: 600px;
+    min-width: 60rem;
     max-width: 90%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -46,9 +46,10 @@ hr {
 }
 
 .fo {
+    display: grid;
     color: white;
-    margin-left: 1.75rem;
-    margin-right: 1.75rem;
+    margin: 1.75rem;
+    max-width: 90%;
 }
 
 .fo li {
@@ -74,3 +75,9 @@ hr {
     color: var(--dark-primary-color);
 }
 
+@media (max-width: 620px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+}
