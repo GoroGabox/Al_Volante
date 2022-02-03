@@ -25,14 +25,14 @@ html {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 3rem;
+    padding: 2rem;
 }
 
 .main-grid a {
     text-decoration: none;
     color: black;
     margin: 1rem;
-    flex: 0 1 auto;
+    flex: 0 1 35.7rem;
 }
 
 .curse-card {

@@ -277,11 +277,12 @@ html {
 .steps{
     width: 100%;
     min-width: 320px;
-    height: 640px;
+    height: fit-content;
     display: grid;
     align-items: center;
     justify-content: center;
     margin-bottom: 4rem;
+    padding-top: 5rem;
 }
 
 .steps_container {
@@ -364,5 +365,10 @@ html {
 
     .nav-links.active {
         display: flex;
+    }
+
+    .steps_grid {
+        display: flex;
+        flex-direction: column;
     }
 }
