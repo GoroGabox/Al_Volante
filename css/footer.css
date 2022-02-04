@@ -57,6 +57,12 @@ hr {
    text-decoration: none;
 }
 
+.fo li a {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
 .st {
     margin-bottom: 2.0rem;
     font-size: 2.2rem;
@@ -75,9 +81,17 @@ hr {
     color: var(--dark-primary-color);
 }
 
+.fo li a:hover {
+    color: red;
+ }
+
 @media (max-width: 620px) {
     .footer-grid {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, 1fr);
+    }
+
+    hr {
+        width: 90%;
     }
 }

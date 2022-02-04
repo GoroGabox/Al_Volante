@@ -29,6 +29,7 @@ html {
 }
 
 .whatsApp_Button-upper{
+    display: none;
     position: relative;
     bottom: -330px;
     width: 351px;
@@ -188,7 +189,9 @@ html {
 
 /* ACTIVE */
 
+
 .whatsApp_Button-upper.active {
+    display: inline;
     opacity: 100;
     transform: translateY(-350px);
 }
