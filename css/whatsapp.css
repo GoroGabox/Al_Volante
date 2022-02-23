@@ -214,3 +214,27 @@ html {
     opacity: 100;
     transform: rotate(360deg);
 }
+
+@media (max-width: 620px) {
+
+    .whatsApp_Button-callToAction {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .whatsApp_Button-upper{
+        display: none;
+        position: relative;
+        bottom: -300px;
+        width: 300px;
+        height: 200px;
+        opacity: 0;
+        transition: opacity 280ms ease-out, transform 300ms ease-out;
+    }
+
+    .innerBox {
+        width: 270px;
+    }
+}

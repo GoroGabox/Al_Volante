@@ -30,16 +30,12 @@ hr {
 }
 
 .footer {
-    width: 100%;
     padding: 60px 0;
     background-color: rgb(3, 3, 39);
 }
 
 .footer-grid {
-    width: 1170px;
     margin: 0 auto;
-    min-width: 60rem;
-    max-width: 90%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     font-size: 1.6rem;
@@ -49,7 +45,6 @@ hr {
     display: grid;
     color: white;
     margin: 1.75rem;
-    max-width: 90%;
 }
 
 .fo li {
@@ -89,9 +84,5 @@ hr {
     .footer-grid {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, 1fr);
-    }
-
-    hr {
-        width: 90%;
     }
 }
