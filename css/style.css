@@ -63,11 +63,7 @@ html {
 }
 
 .nav-links li:hover {
-    background-color: #2095f2;
-}
-
-.nav-links li a:hover {
-    color:white;
+    text-decoration: underline;
 }
 
 .toggle-button {
@@ -249,7 +245,7 @@ html {
     font-weight: bold;
     text-align: center;
     align-content: center;
-    background-color: red;
+    background-color: var(--acent-color);
     color: white;
     border-radius: 50px;
 }

@@ -72,6 +72,10 @@ html {
     font-size: 2em;
 }
 
+.left-card {
+    min-width: 170px;
+}
+
 .right-card {
     display: flex;
     padding: 1rem;

@@ -22,16 +22,22 @@ html {
 
 .main-grid {
     display: grid;
-    grid-template: auto 30rem 9rem 5.5rem auto auto / 1fr 1fr;
-    justify-items: center;
+    grid-template-rows: auto 8.5rem 20rem 8.5rem 8.5rem 17rem 3.5rem auto;
+    justify-content: center;
     align-items: center;
-    height: 75rem;
+    height: fit-content;
     width: 75%;
-    margin: auto;
+    margin: 2rem auto;
+}
+
+.back {
+    justify-self: left;
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--secondary-text);
 }
 
 .name {
-    grid-column: 1 / 3;
     justify-self: start;
     font-weight: 500;
     font-size: 36px;
@@ -40,7 +46,6 @@ html {
 }
 
 .image {
-    grid-column: 1 / 3;
     width: 100%;
     height: 100%;
     background-image: url(/assets/imgs/vintage-car.jpg);
@@ -49,7 +54,6 @@ html {
 }
 
 .price {
-    grid-column: 1 / 3;
     justify-self: start;
     font-weight: 500;
     font-size: 48px;
@@ -57,26 +61,7 @@ html {
     color: #000000;
 }
 
-.theory-description, .practice-description {
-    display: grid;
-    background: #FFFFFF;
-    border: 0.3rem solid #C4C4C4;
-    border-radius: 0.5rem;
-    width: 98%;
-    height: 90%;
-    place-items: center;
-}
-
-.theory-description p, .practice-description p{
-    font-style: normal;
-    font-weight: normal;
-    font-size: 24px;
-    line-height: 28px;
-    padding: 0 0.5rem;
-}
-
 .pay-button {
-    grid-column: 1 / 3;
     width: 100%;
     height: 4.4rem;
     display: grid;
@@ -95,6 +80,68 @@ html {
 }
 
 .pay-button:hover {
-    background: red;
+    background: var(--acent-color);
     cursor: pointer;
 }
+
+.classAmount{
+    display: grid;
+    grid-template: 1fr 1fr 1fr/ 1fr 1fr 1fr;
+    width: 100%;
+    gap: 0.2rem;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6em;
+    line-height: 2.8em;
+
+}
+
+.classAmount-headItem{
+    background-color: var(--acent-color);
+    color: var(--text-icons);
+    padding: 0.5rem;
+}
+
+.classAmount-item{
+    background-color: var(--divider-color);
+    color: var(--primary-text);
+    padding: 0.5rem;
+}
+
+.date {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 2.8em;
+    padding: 0 0.5rem;
+}
+
+.description{
+    width: 100%;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    background-color: var(--light-primary-color);
+    padding: 0.5rem;
+}
+
+.description div {
+    display: flex;
+    justify-content: space-between;
+    color: var(--dark-primary-color);
+    margin-bottom: 1rem;
+}
+
+.description li {
+    color: var(--primary-text);
+    list-style: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    margin-left: 1rem;
+}
+
+
