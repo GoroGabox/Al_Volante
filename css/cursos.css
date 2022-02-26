@@ -40,7 +40,7 @@ html {
     flex-direction: column;
     justify-content: space-between;
     height: 35rem;
-    background-color: var(--acent-color);
+    background-color: var(--light-primary-color);
     border-radius: 25px;
     box-shadow: 8px 8px 50px -6px #000000;
 }
@@ -56,14 +56,14 @@ html {
 
 .text-card {
     display: grid;
-    grid-template-columns: minmax(165px,50%) 1fr;
+    grid-template-columns: minmax(100px,50%) 1fr;
     padding: 1rem;
 }
 
 .price-card {
     color: var(--primary-text);
     font-weight: bold;
-    font-size: 3.5em;
+    font-size: 3em;
 }
 
 .title-card {
@@ -73,7 +73,7 @@ html {
 }
 
 .left-card {
-    min-width: 170px;
+    min-width: 140px;
 }
 
 .right-card {
