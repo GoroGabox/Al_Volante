@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-primary-color:#1976D2;
+    --light-primary-color:#BBDEFB;
+    --primary-color:#2196F3;
+    --text-icons:#FFFFFF;
+    --acent-color:#FF9800;
+    --primary-text:#212121;
+    --secondary-text:#757575;
+    --divider-color:#BDBDBD;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "poppins", sans-serif;
+}
+
+main {
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+    gap: 3rem;
+    height: fit-content;
+    width: 80%;
+    margin: 3rem auto;
+    justify-content: center;
+}
+
+.image {
+    background-image:url(/assets/imgs/car-driving.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 1px solid var(--divider-color);
+    border-radius: 1rem;
+    padding: .5rem;
+}
+
+.title {
+    font-weight: 400;
+    font-size: 2em;
+}
+
+.info {
+    color: var(--primary-text);
+    font-size: 1.2em;
+    font-weight: lighter;
+}
+
+.school{
+    grid-column: 2 / 4;
+}
+
+.teachers{
+    grid-column: 1 / 3;
+}
+
+.cars{
+    grid-column: 2 / 4;
+}
+
+@media (max-width: 820px) {
+    main {
+        grid-template: repeat(6, 1fr) / 1fr; 
+    }
+
+    .image {
+        height: 100%;
+        width: 100%;
+    }
+
+    .school{
+        grid-column: unset;
+    }
+    
+    .teachers{
+        grid-column: unset;
+        grid-row: 4 / 5;
+    }
+    
+    .cars{
+        grid-column: unset;
+    }
+}

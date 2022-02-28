@@ -185,9 +185,9 @@ html {
     background-color: var(--primary-color);
 }
 
-.contact img{
+.map{
     width: 75%;
-    height: auto;
+    height: 300px;
 }
 
 .steps{
@@ -202,7 +202,7 @@ html {
 }
 
 .steps_container {
-    width: 90%;
+    width: 80%;
     display: grid;
     place-self: center;
 }

@@ -9,6 +9,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" href="css/footer.css">
+        <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+        <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
     </head>
     <body>
         <header class="header">
@@ -60,7 +62,7 @@
                 </div>
             </section>
             <section class="contact">
-                    <img src="assets/imgs/flyer imprenta.jpg" alt="Orden del Curso">
+                <div id='map' class="map"></div>
             </section>
         </main>
         <div class="footer">
@@ -149,5 +151,6 @@
             </div>
         </div>
         <script src="./script.js"></script>
+        <script src="./mapbox.js"></script>
     </body>
 </html>

@@ -62,7 +62,7 @@ html {
 
 .price {
     grid-column: 2 / 3;
-    grid-row: 3 / 4;
+    grid-row: 4 / 5;
     justify-self: start;
     font-weight: 500;
     font-size: 48px;
@@ -81,7 +81,7 @@ html {
     font-weight: 600;
     font-size: 24px;
     line-height: 18px;
-    background: var(--acent-color);
+    background: var(--dark-primary-color);
     transition: background 120ms ease-in;
 }
 
@@ -98,6 +98,7 @@ html {
 
 .classAmount{
     grid-column: 2 / 3;
+    grid-row: 5 / 6;
     display: grid;
     grid-template: 1fr 1fr 1fr/ 1fr 1fr 1fr;
     width: 100%;
@@ -110,19 +111,20 @@ html {
 }
 
 .classAmount-headItem{
-    background-color: var(--acent-color);
+    background-color: var(--dark-primary-color);
     color: var(--text-icons);
     padding: 0.5rem;
 }
 
 .classAmount-item{
-    background-color: var(--divider-color);
+    background-color: #f3f3f3;
     color: var(--primary-text);
     padding: 0.5rem;
 }
 
 .date {
-    grid-column: 2 / 3;
+    grid-column: 1 / 2;
+    grid-row: 7 / 8;
     font-style: normal;
     font-weight: normal;
     font-size: 1.4rem;
@@ -132,13 +134,15 @@ html {
 
 .description{
     grid-column: 2 / 3;
+    grid-row: 6 / 7;
     width: 100%;
     text-decoration: none;
     font-style: normal;
     font-weight: normal;
     font-size: 24px;
     line-height: 28px;
-    background-color: var(--dark-primary-color);
+    border: 1px solid #e9e9e9;
+    border-radius: 1rem;
     padding: 1rem;
 }
 
@@ -146,17 +150,17 @@ html {
     display: flex;
     justify-content: space-between;
     font-size: 1.3em;
-    font-weight:600;
+    font-weight:400;
     letter-spacing: 0.2rem;
-    color: var(--acent-color);
+    color: var(--primary-text);
     margin-bottom: 1rem;
 }
 
 .description li {
-    color: var(--text-icons);
+    color: var(--secondary-text);
     list-style: none;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 50;
     font-size: 20px;
     line-height: 28px;
     margin-left: 1rem;
