@@ -186,7 +186,6 @@ html {
     place-items: center;
     background-color: var(--primary-color);
     background-image: url(../assets/imgs/roadMapDarkBlue.png);
-    rotate: 180deg;
 }
 
 .horario {
